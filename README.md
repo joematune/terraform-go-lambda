@@ -1,4 +1,4 @@
-# Learn Terraform Modules with Lambda functions & API Gateway in Go
+# Terraform Lambda & API Gateway in Go
 
 ### Prerequisites
 
