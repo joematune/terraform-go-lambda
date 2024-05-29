@@ -1,6 +1,17 @@
-# Learn Terraform - Lambda functions and API Gateway
+# Learn Terraform Modules with Lambda functions & API Gateway in Go
 
-AWS Lambda functions and API gateway are often used to create serverless
-applications.
+### Prerequisites
 
-This repo is a companion repo to the [AWS Lambda functions and API gateway](https://developer.hashicorp.com/terraform/tutorials/aws/lambda-api-gateway) tutorial.
+- `terraform` - Recommended installation with [`tfswitch`](https://tfswitch.warrensbox.com/Install/)
+- `go` - Recommended installation with [`g` (Go version manager)](https://github.com/stefanmaric/g#single-line-installation)
+
+#### Make & deploy & demo app
+
+1. `make build` - build Go binary for lambda
+1. `terraform init` - install TF dependencies
+1. `make deploy` - build Go binary, create cloud resources
+1. `make post` - post to new endpoint
+
+Clean up (destroy) resources
+
+- `terraform destroy` - remove all resources

@@ -1,29 +1,20 @@
-# Copyright (c) HashiCorp, Inc.
-# SPDX-License-Identifier: MPL-2.0
-
 terraform {
-
-  cloud {
-    workspaces {
-      name = "learn-terraform-lambda-api-gateway"
-    }
-  }
+  # We don't need no stinking cloud - local state
 
   required_providers {
     aws = {
       source  = "hashicorp/aws"
-      version = "~> 4.15.0"
+      version = "~> 5.51.1"
     }
     random = {
       source  = "hashicorp/random"
-      version = "~> 3.1.0"
+      version = "~> 3.6.2"
     }
     archive = {
       source  = "hashicorp/archive"
-      version = "~> 2.2.0"
+      version = "~> 2.4.0"
     }
   }
 
-  required_version = "~> 1.2"
+  required_version = "~> 1.8"
 }
-
